@@ -1,0 +1,12 @@
+# Benötigte CSS Eigenschaften
+- Hintergrundfarbe: background-color
+- Farbwerte: hsl(0, 100%, 50%);
+- Breite: width
+- Höhe: height
+- Randfarbe: border-color
+- Randdicke: border-width
+- Randart: border-style
+- Rand zusammengefasst: border: width color style
+- Innenabstand: padding
+- Aussenabstand: margin
+- Aussen-/Innenabstand für seite: margin/padding-top/left/bottom/right

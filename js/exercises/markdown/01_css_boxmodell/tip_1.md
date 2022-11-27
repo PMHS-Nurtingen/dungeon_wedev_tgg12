@@ -1,0 +1,2 @@
+# CSS Klassen verwenden
+Style Klassen können beliebige Namen haben. Im Beispiel gibt es die Klasse **box**. Diese muss im Element im Attribut **class="box"** angegeben werden. Einem Element können beliebig viele Klassen zugeordnet werden! Im CSS wird die Klasse über ihren Namen mit einem vorangestellten Punkt angesprochen, also im Beispiel **.box { ... }**
