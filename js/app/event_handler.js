@@ -8,7 +8,9 @@ import {
   setTips
 } from "./tip_handler.js";
 import { updatePageVariables } from "./view.js";
-var converter = new showdown.Converter();
+var converter = new showdown.Converter({
+  openLinksInNewWindow: true,
+});
 
 async function exerciseMessageHandler(event) {
   if (event.origin !== window.origin) {

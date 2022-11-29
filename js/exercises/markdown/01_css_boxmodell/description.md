@@ -1,6 +1,7 @@
-1. Die HTML Datei enthält zwei Boxen. Diese sind aktuell noch nicht formatiert. Setze die Hintergrundfarbe für alle Elemente der Klasse **box** auf **hsl(0, 100%, 100%)**. Der CSS Code ist unter **.box {...}** schon vorbereitet.
-2. Lege für alle Boxen eine Höhe und Breite von jeweils **200px** fest.
-3. Füge für jede Box einen Rand hinzu. Dieser soll die Farbe **blue** haben, **20px** breit sein und den style **solid** haben.
-4. Füge einen Innenabstand von rundum **20px** ein.
-5. Füge einen Außenabstand ein. Dieser soll links und rechts jeweils **30px** betragen. Oben und Unten soll der Abstand nur **15px** groß sein.
-6. Erstelle eine dritte Box, deren Eigenschaft **width** der **Gesamtbreite der anderen Boxen** entspricht.
+1. Die HTML Datei enthält zwei Boxen. Diese sind aktuell noch nicht formatiert. Setze die Hintergrundfarbe für alle Elemente der Klasse **container** auf **hsl(0, 100%, 100%)**.
+2. Lege für alle "container" eine Höhe von **800px** und Breite **480px** fest.
+3. Füge für jeden Container einen Rand hinzu. Dieser soll schwarz sein, **20px** 2 sein und den style **solid** haben.
+4. Runde den Rand an allen vier Ecken mit einem Radius von **20px** ab.
+5. Füge einen Innenabstand von rundum **20px** ein.
+6. Füge einen Außenabstand ein. Dieser soll links und rechts jeweils **30px** betragen. Oben und Unten soll der Abstand nur **15px** groß sein.
+7. Erstelle einen dritte Container mit der id "container3", dessen Eigenschaft **width** der **Gesamtbreite der anderen Boxen** entspricht.

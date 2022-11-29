@@ -5,7 +5,9 @@ import {
 
 var currentInfos = []
 var currentInfoNodes = []
-var converter = new showdown.Converter();
+var converter = new showdown.Converter({
+    openLinksInNewWindow: true,
+});
 
 async function setInfos(initInfosMsg) {
     let infos = initInfosMsg.content;

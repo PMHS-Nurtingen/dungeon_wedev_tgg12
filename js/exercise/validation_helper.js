@@ -352,6 +352,12 @@ export const cssBorderStyleNames = [
     "border-bottom-style",
     "border-right-style",
 ];
+export const cssBorderRadiusNames = [
+    "border-top-left-radius",
+    "border-top-right-radius",
+    "border-bottom-right-radius",
+    "border-bottom-left-radius"
+];
 export const cssMarginNames = [
     "margin-top",
     "margin-left",

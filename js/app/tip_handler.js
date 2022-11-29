@@ -13,7 +13,9 @@ import {
 
 var currentTips = []
 var currentTipNodes = []
-var converter = new showdown.Converter();
+var converter = new showdown.Converter({
+    openLinksInNewWindow: true,
+});
 
 async function setTips(initTipMsg) {
     console.log("setTips");

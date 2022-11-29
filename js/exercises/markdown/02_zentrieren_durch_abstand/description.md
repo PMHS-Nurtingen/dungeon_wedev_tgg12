@@ -1,0 +1,1 @@
+1. Zentriere den div-Container durch den Einsatz des linken und rechten Aussenabstands. Der Container soll auch noch zentriert sein, wenn die Größe des Containers oder Fensters verändert wird.

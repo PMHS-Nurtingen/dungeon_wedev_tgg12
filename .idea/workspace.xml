@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ed4e82a-eaaa-483e-93a1-68146de41be6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/aufgaben/01_css_box_modell.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/01_css_boxmodell/description.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/01_css_boxmodell/info.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/01_css_boxmodell/tip_1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/01_css_boxmodell/tip_2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/01_css_boxmodell/tip_solution.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/01_html_block_elemente/aufgabe_html_block_elemente.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/01_html_block_elemente/info_html_block_elemente.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/01_html_block_elemente/tip1_html_link.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/01_html_block_elemente/tip2_html_bild.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/01_html_block_elemente/tip3_loesung.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgaben/02_zentrieren_durch_abstand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/exercises/02_zentrieren_durch_abstand.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/02_zentrieren_durch_abstand/description.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/02_zentrieren_durch_abstand/info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/02_zentrieren_durch_abstand/tip_solution.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgaben/01_css_box_modell.html" beforeDir="false" afterPath="$PROJECT_DIR$/aufgaben/01_css_box_modell.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app/exercise_setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app/exercise_setup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/exercise/validation_helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/exercise/validation_helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/exercises/01_css_box_modell.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/exercises/01_css_box_modell.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/exercises/markdown/01_css_boxmodell/description.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/exercises/markdown/01_css_boxmodell/description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/exercises/markdown/01_css_boxmodell/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/exercises/markdown/01_css_boxmodell/info.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/exercises/markdown/01_css_boxmodell/tip_solution.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/exercises/markdown/01_css_boxmodell/tip_solution.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +37,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "//wsl$/openSUSE-Tumbleweed/home/dennis/code/github.com/dungeon_wedev_tgg12/aufgaben",
+    "last_opened_file_path": "//wsl$/openSUSE-Tumbleweed/home/dennis/code/github.com/dungeon_wedev_tgg12/js/exercises/markdown",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "vue.rearranger.settings.migration": "true"
@@ -43,6 +45,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\openSUSE-Tumbleweed\home\dennis\code\github.com\dungeon_wedev_tgg12\js\exercises\markdown" />
+      <recent name="\\wsl$\openSUSE-Tumbleweed\home\dennis\code\github.com\dungeon_wedev_tgg12\js\exercises" />
       <recent name="\\wsl$\openSUSE-Tumbleweed\home\dennis\code\github.com\dungeon_wedev_tgg12\aufgaben" />
       <recent name="\\wsl$\openSUSE-Tumbleweed\home\dennis\code\github.com\dungeon_wedev_tgg12\js\exercises\markdown\01_html_block_elemente" />
     </key>
@@ -60,7 +64,8 @@
       <option name="presentableId" value="Default" />
       <updated>1669553899192</updated>
       <workItem from="1669553900360" duration="9000" />
-      <workItem from="1669553911206" duration="2080000" />
+      <workItem from="1669553911206" duration="2173000" />
+      <workItem from="1669728213703" duration="2055000" />
     </task>
     <servers />
   </component>
