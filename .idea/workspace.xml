@@ -2,21 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ed4e82a-eaaa-483e-93a1-68146de41be6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/aufgaben/03_vertical_distance.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/exercises/03_vertical_distance.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/03_vertical_distance/description.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/03_vertical_distance/info.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/03_vertical_distance/tip_solution.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/exercises/04_semantische_struktur.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/04_semantische_struktur/description.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/04_semantische_struktur/info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/04_semantische_struktur/tip_1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/04_semantische_struktur/tip_2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/exercises/markdown/04_semantische_struktur/tip_solution.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aufgaben/02_zentrieren_durch_abstand.html" beforeDir="false" afterPath="$PROJECT_DIR$/aufgaben/02_zentrieren_durch_abstand.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgaben/03_vertical_distance.html" beforeDir="false" afterPath="$PROJECT_DIR$/aufgaben/04_semantische_struktur.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/app/exercise_setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app/exercise_setup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/exercise/validation_helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/exercise/validation_helper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/exercises/02_zentrieren_durch_abstand.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/exercises/02_zentrieren_durch_abstand.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,7 +68,7 @@
       <updated>1669553899192</updated>
       <workItem from="1669553900360" duration="9000" />
       <workItem from="1669553911206" duration="2173000" />
-      <workItem from="1669728213703" duration="3828000" />
+      <workItem from="1669728213703" duration="4889000" />
     </task>
     <servers />
   </component>

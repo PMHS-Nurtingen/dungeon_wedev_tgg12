@@ -1,0 +1,10 @@
+1. Erstelle eine Website mit folgenden Inhalten. Es sollen semantische HTML5-Tags für die entsprechenden Bereiche
+  verwendet werden!
+2. Eine Kopfzeile mit einer Überschrift erster Ordnung
+3. Hauptteil mit folgenden Inhalten:
+     - Erster Blogpost mit einer Überschrift zweiter Ordnung sowie einem Paragraphen mit Blindtext.
+     - Zweiter Blogpost mit einer Überschrift zweiter Ordnung sowie einem Paragraphen mit Blindtext.
+4. Eine Fußzeile in der mit kleinerem Text das Copyright Symbol und dahinter das Jahr sowie ein beliebiger Name steht.
+
+**Tipp**: Blindtexte kann man z.B. auf <a href="https://corporatelorem.kovah.de/">https://corporatelorem.kovah.de/</a>
+  finden.
