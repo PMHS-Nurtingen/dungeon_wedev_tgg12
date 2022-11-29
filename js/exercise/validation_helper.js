@@ -685,6 +685,29 @@ export function listHasMinElements(elName, numElements) {
     );
 }
 
+export function getVerticalDistanceBetweenElements(elName1, elName2) {
+    let el1 = document.getElementById(elName1);
+    if (!el1) {
+        return getFailResultObj(elDoesNotExistMsg(elName1));
+    }
+    let el2 = document.getElementById(elName2);
+    if (!el2) {
+        return getFailResultObj(elDoesNotExistMsg(elName2));
+    }
+    const bb1 = el1.getBoundingClientRect();
+    const bb2 = el2.getBoundingClientRect();
+    return bb2.top-bb1.bottom;
+}
+
+export function checkVerticalDistanceBetweenElements(elName1, elName2, targetDistance) {
+    const distance = getVerticalDistanceBetweenElements(elName1, elName2);
+    console.log(`Distanz Ist: ${distance} / Soll: ${targetDistance}`);
+    if (distance === targetDistance) {
+        return getSuccessResultObj();
+    }
+    return getFailResultObj(`Die vertikale Entfernung von ${elName1} und ${elName2} ist nicht korrekt.`)
+}
+
 export function or(resultObjects) {
     let errorMessage = "";
     for (let i = 0; i < resultObjects.length; i++) {

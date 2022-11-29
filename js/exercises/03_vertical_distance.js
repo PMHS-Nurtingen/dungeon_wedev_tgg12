@@ -1,4 +1,5 @@
 import {
+    checkVerticalDistanceBetweenElements,
     classCheckStyleSameValue,
     classCheckStyleValues,
     classHasCorrectStyleValue,
@@ -10,7 +11,7 @@ import {
 } from '../exercise/validation_helper.js';
 import {Exercise} from '../exercise/exercise_base.js';
 
-let exerciseID = "02_zentrieren_durch_abstand";
+let exerciseID = "03_vertical_distance";
 
 
 let instructions = {
@@ -20,7 +21,7 @@ let instructions = {
 
 let infos = [
     {
-        title: "Text: Zentrieren durch Abstände",
+        title: "Text: Vertikale Abstände",
         markdown: `/js/exercises/markdown/${exerciseID}/info.md`,
         contentIsMarkdown: true,
     },
@@ -37,10 +38,10 @@ let tips = [
 
 let validationFuncs = [
     function () {
-        return hasSelectorStyleValue("container", "margin-left", "auto");
+        return checkVerticalDistanceBetweenElements("header", "main", 10);
     },
     function () {
-        return hasSelectorStyleValue("container", "margin-right", "auto");
+        return checkVerticalDistanceBetweenElements("main", "footer", 10);
     },
 ]
 
