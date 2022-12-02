@@ -386,17 +386,18 @@ export function elCheckStyleSameValue(elName, styleNames, styleValue) {
     }
     return getSuccessResultObj();
 }
-export function classCheckStyleSameValue(className, names, value) {
+export function classCheckStyleSameValue(className, names, value, round=null) {
     return classCheckStyleValues(
         className,
         names,
-        Array(names.length).fill(value)
+        Array(names.length).fill(value),
+        round
     );
 }
 
-export function classCheckStyleValues(className, names, values) {
+export function classCheckStyleValues(className, names, values, round=null) {
     for (let i = 0; i < names.length; i++) {
-        let result = classHasCorrectStyleValue(className, names[i], values[i]);
+        let result = classHasCorrectStyleValue(className, names[i], values[i], round);
         if (!result.result) {
             return result;
         }
@@ -404,7 +405,7 @@ export function classCheckStyleValues(className, names, values) {
     return getSuccessResultObj();
 }
 
-export function classHasCorrectStyleValue(className, styleName, styleValue) {
+export function classHasCorrectStyleValue(className, styleName, styleValue, round=null) {
     let els = document.getElementsByClassName(className);
     if (els.length === 0) {
         return getFailResultObj(
@@ -416,7 +417,8 @@ export function classHasCorrectStyleValue(className, styleName, styleValue) {
             els[i],
             className,
             styleName,
-            styleValue
+            styleValue,
+            round
         );
         if (!result.result) {
             return result;
@@ -612,14 +614,20 @@ export function hasCorrectStyleValue(elName, styleName, styleValue) {
     return elHasCorrectStyleValue(el, elName, styleName, styleValue);
 }
 
-export function elHasCorrectStyleValue(el, elName, styleName, styleValue) {
+export function elHasCorrectStyleValue(el, elName, styleName, styleValue, round=null) {
     if (!el) {
         return getFailResultObj(elDoesNotExistMsg(elName));
     }
     let compStyles = window.getComputedStyle(el);
     let currentValue = compStyles.getPropertyValue(styleName);
     console.log(`${styleName} Ist: ${currentValue} / Soll: ${styleValue}`);
-    if (currentValue !== styleValue) {
+    let success = false
+    if (round != null) {
+        success = parseFloat(currentValue).toFixed(round) === parseFloat(styleValue).toFixed(round);
+    } else {
+        success = currentValue === styleValue;
+    }
+    if (!success) {
         return getFailResultObj(
             elWrongStyleValueMsg(elName, styleName, styleValue)
         );

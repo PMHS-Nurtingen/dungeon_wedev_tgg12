@@ -58,31 +58,31 @@ let tips = [
 
 let validationFuncs = [
     function () {
-        return classHasCorrectStyleValue("container", "width", "480px");
+        return classHasCorrectStyleValue("container", "width", "480px", 0);
     },
     function () {
-        return classHasCorrectStyleValue("container", "height", "800px");
+        return classHasCorrectStyleValue("container", "height", "800px", 0);
     },
     function () {
         return classCheckStyleSameValue("container", cssBorderColorNames, "rgb(0, 0, 0)");
     },
     function () {
-        return classCheckStyleSameValue("container", cssBorderWidthNames, "2px");
+        return classCheckStyleSameValue("container", cssBorderWidthNames, "2px", 0);
     },
     function () {
         return classCheckStyleSameValue("container", cssBorderStyleNames, "solid");
     },
     function() {
-        return classCheckStyleSameValue("container", cssBorderRadiusNames, "20px")
+        return classCheckStyleSameValue("container", cssBorderRadiusNames, "20px", 0)
     },
     function () {
-        return classCheckStyleSameValue("container", cssPaddingNames, "20px");
+        return classCheckStyleSameValue("container", cssPaddingNames, "20px", 0);
     },
     function () {
-        return classCheckStyleValues("container", cssMarginNames, ["15px", "30px", "15px", "30px"]);
+        return classCheckStyleValues("container", cssMarginNames, ["15px", "30px", "15px", "30px"], 0);
     },
     function () {
-        return hasCorrectStyleValue("container3", "width", "584px");
+        return hasCorrectStyleValue("container3", "width", "584px", 0);
     }
 ]
 
