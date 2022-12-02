@@ -699,10 +699,10 @@ export function getVerticalDistanceBetweenElements(elName1, elName2) {
     return bb2.top-bb1.bottom;
 }
 
-export function checkVerticalDistanceBetweenElements(elName1, elName2, targetDistance) {
-    const distance = getVerticalDistanceBetweenElements(elName1, elName2);
+export function checkVerticalDistanceBetweenElements(elName1, elName2, targetDistance, decimals=0) {
+    const distance = getVerticalDistanceBetweenElements(elName1, elName2).toFixed(decimals);
     console.log(`Distanz Ist: ${distance} / Soll: ${targetDistance}`);
-    if (distance === targetDistance) {
+    if (distance === targetDistance.toFixed(decimals)) {
         return getSuccessResultObj();
     }
     return getFailResultObj(`Die vertikale Entfernung von ${elName1} und ${elName2} ist nicht korrekt.`)
