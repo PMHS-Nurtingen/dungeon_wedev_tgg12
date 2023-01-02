@@ -19,7 +19,7 @@ Navigationsleisten werden häufig über ungeordnete Listen umgesetzt. Um dem Bro
 
 #### Ausgabe
 
-![Ausgabe Navigationsleisten Beispiel 1](imgs/bsp_1.png)
+![Ausgabe Navigationsleisten Beispiel 1](js/exercises/markdown/05_navigation/imgs/bsp_1.png)
 
 ---
 
@@ -42,7 +42,7 @@ ul {
 
 #### Ausgabe
 
-![Ausgabe Navigationsleisten Beispiel 2](imgs/bsp_2.png)
+![Ausgabe Navigationsleisten Beispiel 2](js/exercises/markdown/05_navigation/imgs/bsp_2.png)
 
 ---
 
@@ -75,7 +75,7 @@ ul>li {
 
 #### Ausgabe
 
-![Ausgabe Navigationsleisten Beispiel 3](imgs/bsp_3.png)
+![Ausgabe Navigationsleisten Beispiel 3](js/exercises/markdown/05_navigation/imgs/bsp_3.png)
 
 ---
 
