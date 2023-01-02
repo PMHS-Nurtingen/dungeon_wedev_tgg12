@@ -2,11 +2,18 @@ import {
     classCheckStyleSameValue,
     classCheckStyleValues,
     classHasCorrectStyleValue,
-    cssBorderColorNames, cssBorderRadiusNames,
+    cssBorderColorNames,
+    cssBorderRadiusNames,
     cssBorderStyleNames,
     cssBorderWidthNames,
     cssMarginNames,
-    cssPaddingNames, elCheckStyleSameValue, elementsExist, hasCorrectStyleValue
+    cssPaddingNames,
+    elCheckStyleSameValue,
+    elementsExist,
+    hasCorrectStyleValue,
+    hasSelectorStyleValue,
+    navListContainsElements,
+    NavListItem
 } from '../exercise/validation_helper.js';
 import {Exercise} from '../exercise/exercise_base.js';
 
@@ -42,14 +49,34 @@ let tips = [
 ]
 
 let validationFuncs = [
-    function() { return elementsExist("header", 1, false); },
-    function() { return elementsExist("h1", 1, false, document.getElementsByTagName("header")[0]); },
-    function() { return elementsExist("main", 1, false); },
-    function() { return elementsExist("footer", 1, false); },
-    function() { return elementsExist("article", 2, true, document.getElementsByTagName("main")[0]); },
-    function() { return elementsExist("h2", 2, true, document.getElementsByTagName("main")[0]); },
-    function() { return elementsExist("p", 2, true, document.getElementsByTagName("main")[0]); },
-    function() { return elementsExist("small", 1, false, document.getElementsByTagName("footer")[0]); },
+    function() { return elementsExist("nav", 1, false); },
+    function() { return elementsExist("ul", 1, false, document.getElementsByTagName("nav")[0]); },
+    function() { return elementsExist("li", 3, false, document.getElementsByTagName("ul")[0]); },
+    function () {
+        return classHasCorrectStyleValue("menu", "background-color", "rgb(230, 230, 230)");
+    },
+    function () {
+        return classHasCorrectStyleValue("menu", "height", "61px", 0);
+    },
+    function () {
+        return classHasCorrectStyleValue("menu", "list-style-type", "none");
+    },
+    function () {
+        return classCheckStyleSameValue("menu", cssPaddingNames, "0px", 0);
+    },
+    function () {
+        return classCheckStyleSameValue("menu", cssMarginNames, "0px", 0);
+    },
+    function () {
+        return hasSelectorStyleValue(".menu > li", "padding", "20px");
+    },
+    function () {
+        return hasSelectorStyleValue(".menu > li", "display", "inline");
+    },
+    function() { return navListContainsElements("hauptmenu", [new NavListItem("#", "Startseite"),
+        new NavListItem("#", "Dashboard"),
+        new NavListItem("#", "Meine Kurse")]); }
+
 ]
 
 let exerciseBase = new Exercise(exerciseID, instructions, infos, tips, validationFuncs);

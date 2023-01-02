@@ -118,6 +118,48 @@ export function elementsExist(
     );
 }
 
+export class NavListItem {
+    constructor(href, innerText) {
+        this.href = href;
+        this.innerText = innerText;
+    }
+}
+export function navListContainsElements(listElId, navListItems) {
+    let el = document.getElementById(listElId);
+    if (!el) {
+        return getFailResultObj(elDoesNotExistMsg(listElId));
+    }
+
+    let children = el.getElementsByTagName("li");
+
+    if (children.length !== navListItems.length) {
+        return getFailResultObj(
+            `List ${listElId} enthält ${children.length} Elemente. Gefordert sind ${navListItems.length}.`
+        );
+    }
+    for (let i = 0; i < navListItems.length; i++) {
+        let target = navListItems[i];
+        let child = children[i].children[0];
+        console.log(child);
+        if (child.tagName !== "A") {
+            return getFailResultObj(
+                `Das ${i}te ListItem der Liste ${listElId} enthält keinen Link.`
+            );
+        }
+        if (target.href !== child.getAttribute("href")) {
+            return getFailResultObj(
+                `Das ${i}te ListItem der Liste ${listElId} verweist auf die Website '${child.href}', gefordert ist '${target.href}'.`
+            );
+        }
+        if (target.innerText !== child.innerText) {
+            return getFailResultObj(
+                `Das ${i}te ListItem der Liste ${listElId} enthält den Text ${child.innerText}, gefordert ist ${target.innerText}.`
+            );
+        }
+    }
+    return getSuccessResultObj();
+}
+
 export function innerTextEquals(elID, innerText) {
     let h1El = document.getElementById(elID);
     if (!h1El) {
@@ -561,7 +603,6 @@ function checkCSSStyleRule(rule, selector, values) {
 }
 
 export function elHasCSSClass(elName, className) {
-    console.log("hello");
     console.log(elName)
     let el = document.getElementById(elName);
     console.log(el)

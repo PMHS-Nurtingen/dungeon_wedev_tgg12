@@ -90,8 +90,8 @@ async function getTipDialogElement(exerciseID, tipID, tip) {
     if (tip.contentIsMarkdown) {
         let data = await fetch(tip.markdown)
             .then(response => response.text())
-        console.log("Loaded markdown");
-        console.log(data);
+        // console.log("Loaded markdown");
+        // console.log(data);
         contentEl.innerHTML = converter.makeHtml(data);
     }
     else if (tip.contentIsHTML) {

@@ -58,8 +58,8 @@ async function getInfoDialogElement(infoID, info) {
     if (info.contentIsMarkdown) {
         let data = await fetch(info.markdown)
             .then(response => response.text())
-        console.log("Loaded markdown");
-        console.log(data);
+        // console.log("Loaded markdown");
+        // console.log(data);
         contentEl.innerHTML = converter.makeHtml(data);
     }
     else if (info.contentIsHTML) {

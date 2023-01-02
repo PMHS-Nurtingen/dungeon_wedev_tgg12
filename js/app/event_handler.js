@@ -46,8 +46,8 @@ async function setInstructions(instructionData) {
   if (instructionData.isMarkdown) {
     let data = await fetch(instructionData.content)
       .then(response => response.text())
-    console.log("Loaded markdown");
-    console.log(data);
+    // console.log("Loaded markdown");
+    // console.log(data);
     selectedExerciseInstructionsEl.innerHTML = converter.makeHtml(data);
     return
   }

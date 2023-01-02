@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ed4e82a-eaaa-483e-93a1-68146de41be6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/js/exercises/05_navigation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aufgaben/05_navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/aufgaben/05_navigation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/exercises/markdown/05_navigation/tip_1.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/exercises/markdown/05_navigation/tip_1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/exercises/markdown/05_navigation/tip_2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app/event_handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app/event_handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app/experiment_state_handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app/experiment_state_handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app/info_handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app/info_handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app/tip_handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app/tip_handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/exercise/exercise_base.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/exercise/exercise_base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/exercise/validation_helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/exercise/validation_helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/exercises/05_navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/exercises/05_navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/exercises/markdown/05_navigation/description.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/exercises/markdown/05_navigation/description.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/exercises/markdown/05_navigation/tip_solution.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/exercises/markdown/05_navigation/tip_solution.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +73,7 @@
       <workItem from="1669553900360" duration="9000" />
       <workItem from="1669553911206" duration="2173000" />
       <workItem from="1669728213703" duration="4889000" />
-      <workItem from="1672664815769" duration="3537000" />
+      <workItem from="1672664815769" duration="7228000" />
     </task>
     <servers />
   </component>
