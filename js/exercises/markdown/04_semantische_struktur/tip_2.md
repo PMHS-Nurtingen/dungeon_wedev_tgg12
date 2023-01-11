@@ -9,5 +9,5 @@ Um diese Aufgabe zu lösen benötigst du:
 Für die Textformatierungen werden **h1**-, **h2**-, **p**- und **small**-Elemente benötigt. 
 
 ## Weiterführende Links
-- [https://wiki.selfhtml.org/wiki/HTML/Tutorials/HTML5/Seitenstrukturierung](https://wiki.selfhtml.org/wiki/HTML/Tutorials/HTML5/Seitenstrukturierung)
+- [https://wiki.selfhtml.org/wiki/HTML/Tutorials/Seitenstrukturierung](https://wiki.selfhtml.org/wiki/HTML/Tutorials/Seitenstrukturierung)
 - [https://www.w3schools.com/html/html5_semantic_elements.asp](https://www.w3schools.com/html/html5_semantic_elements.asp)
