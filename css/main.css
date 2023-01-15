@@ -201,7 +201,7 @@ h6 {
 
 .exercise-container {
   position: relative;
-  height: 0;
+  min-height: 400px;
   padding-top: 45%;
   /* overflow:hidden; */
   padding-left: 5px;
@@ -261,7 +261,7 @@ nav>ul {
 }
 
 .nes-dialog {
-  max-width: 900px;
+  max-width: 1800px;
 }
 
 blockquote {

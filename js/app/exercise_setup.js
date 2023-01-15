@@ -6,6 +6,8 @@ let exercises = [
     { id: "03_vertical_distance", name: "Vertikale Abstände", level: 1 },
     { id: "04_semantische_struktur", name: "Seitenstruktur (semantische Elemente)", level: 3 },
     { id: "05_navigation", name: "Navigation", level: 3 },
+    { id: "06_flexbox_navigation", name: "Navigation (Flexbox)", level: 1 },
+    { id: "07_navigation_seitenleiste", name: "Navigation Seitenleiste", level: 2 },
 ];
 
 export { exercises };

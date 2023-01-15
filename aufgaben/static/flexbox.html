@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title>PMHS CSS: Flexbox Helfer (Grundlagen)</title>
+
+    <style>
+        .container {
+            height: 300px;
+            width: 900px;
+            border: solid black 2px;
+        }
+
+        .item {
+            padding: 10px;
+            color: white;
+            background-color: hsl(0, 100%, 30%, 50%);
+            border: solid hsl(0, 0%, 0%, 25%) 2px;
+        }
+
+        .wrapper {
+            position: relative;
+            left: 10px;
+            top: 25px;
+        }
+
+        .wrapper-tab {
+            position: relative;
+        }
+
+        .sample-arrow {
+            bottom: 10px;
+            left: 0;
+            height: 100px;
+            transform: rotate(90deg);
+        }
+
+        .arrow {
+            position: absolute;
+            transform-origin: bottom center;
+        }
+
+
+        .arrow::before {
+            position: absolute;
+            height: 0;
+            width: 0;
+            content: "";
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .red-arrow {
+            border: 4px dashed hsl(120, 100%, 40%, 70%);
+        }
+
+        .red-arrow::before {
+            border: 12px solid transparent;
+            border-bottom: 16px solid hsl(120, 100%, 40%, 70%);
+        }
+
+        .green-arrow {
+            border: 2px dashed hsl(0, 50%, 50%, 70%);
+        }
+
+        .green-arrow::before {
+            border: 6px solid transparent;
+            border-bottom: 8px solid hsl(0, 50%, 50%, 70%);
+        }
+
+
+        .top-bar {
+            display: flex;
+            gap: 20px;
+        }
+
+        .margin-left {
+            margin-left: 50px;
+        }
+
+        td {
+            padding: 5px;
+        }
+        
+        .site-wrapper {
+            width: 950px;
+            margin: auto;
+        }
+
+        .invisible {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+<div class="site-wrapper">
+    <div class="top-bar">
+        <div class="form-card">
+            <h3>Flex Container CSS</h3>
+            <form>
+                .container { <br>
+                <textarea id="container-css-input" name="container-css-input" rows="10" cols="30" oninput="onContainerChange()"></textarea>
+                <br>}
+            </form>
+        </div>
+        <div class="form-card invisible">
+            <h3>Flex Item CSS</h3>
+            <form>
+                .item { <br>
+                <textarea id="item-css-input" name="item-css-input" rows="10" cols="30" oninput="onItemChange()"></textarea>
+                <br>}
+            </form>
+        </div>
+        <div class="legende">
+            <h3>Legende</h3>
+            <table>
+                <tr>
+                    <td>Flex-Container</td>
+                    <td>
+                        <div class="container" style="height: 50px; width: 160px;"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Flex-Item</td>
+                    <td>
+                        <div class="item">Name</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hauptachse</td>
+                    <td class="wrapper-tab">
+                        <div class='arrow red-arrow sample-arrow'></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kreuzachse</td>
+                    <td class="wrapper-tab">
+                        <div class='arrow green-arrow sample-arrow'></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="output">
+        <h3>Ausgabe</h3>
+        <div class='wrapper'>
+            <div id="main-axis" class='arrow red-arrow'></div>
+            <div id="cross-axis" class='arrow green-arrow'></div>
+            <div id="container" class="container">
+                <div class="item">Startseite</div>
+                <div class="item">Dashboard</div>
+                <div class="item">Meine Kurse</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const container = document.getElementById("container");
+    const mainAxis = document.getElementById('main-axis');
+    const crossAxis = document.getElementById('cross-axis');
+
+    function init() {
+
+        let containerDisplay = window.getComputedStyle(container).display;
+
+        if (containerDisplay === "flex") {
+            setAxisVisibility("visible");
+            let flexDirection = window.getComputedStyle(container).flexDirection;
+
+            const cHorizontalHeight = container.offsetWidth + 25;
+            const cVerticalHeight = container.offsetHeight + 25;
+
+            const cLeft = 0;
+            const cRight = container.offsetWidth;
+            const cBottom = 0;
+            const cTop = container.offsetHeight;
+
+            const cHorizontalCenter = container.offsetWidth / 2;
+            const cVerticalCenter = container.offsetHeight / 2;
+
+
+            switch (flexDirection) {
+                case "column":
+                    setAxisArrow(mainAxis, cLeft - 10, cTop + 10, cVerticalHeight, 180);
+                    setAxisArrow(crossAxis, cLeft - 10, cTop + 10, cHorizontalHeight, 90);
+                    break;
+                case "row-reverse":
+                    setAxisArrow(mainAxis, cRight + 10, cTop + 10, cHorizontalHeight, 270);
+                    setAxisArrow(crossAxis, cLeft - 10, cTop + 10, cVerticalHeight, 180);
+                    break;
+                case "column-reverse":
+                    setAxisArrow(mainAxis, cLeft - 10, cBottom -10, cVerticalHeight, 0);
+                    setAxisArrow(crossAxis, cLeft - 10, cTop + 10, cHorizontalHeight, 90);
+                    break;
+                default:
+                    setAxisArrow(mainAxis, cLeft - 10, cTop + 10, cHorizontalHeight, 90);
+                    setAxisArrow(crossAxis, cLeft - 10, cTop + 10, cVerticalHeight, 180);
+                    break;
+            }
+        } else {
+            setAxisVisibility("hidden");
+        }
+
+    }
+
+    function setAxisArrow(arrowEl, left, bottom, height, rotation) {
+        arrowEl.style.height = height + "px";
+        arrowEl.style.transform = `rotate(${rotation}deg)`;
+        arrowEl.style.bottom = bottom + "px";
+        arrowEl.style.left = left + "px";
+    }
+
+    function setAxisVisibility(visibility) {
+        mainAxis.style.visibility = visibility;
+        crossAxis.style.visibility = visibility;
+    }
+
+    function onContainerChange() {
+        let text = document.getElementById("container-css-input");
+        let oldStyle = document.getElementById('container-style-ax8823');
+        if (document.contains(oldStyle)) {
+            oldStyle.remove();
+        }
+        var cssStyle = document.createElement('style');
+        cssStyle.id = "container-style-ax8823"
+        cssStyle.type = 'text/css';
+        cssStyle.innerHTML = `.container-style-ax8823{${text.value}}`;
+        document.getElementsByTagName('head')[0].appendChild(cssStyle);
+        document.getElementById("container").classList.add("container-style-ax8823");
+        init();
+    }
+
+    function onItemChange() {
+        let text = document.getElementById("item-css-input");
+        let oldStyle = document.getElementById('item-style-ax8823');
+        if (document.contains(oldStyle)) {
+            oldStyle.remove();
+        }
+        var cssStyle = document.createElement('style');
+        cssStyle.id = "item-style-ax8823"
+        cssStyle.type = 'text/css';
+        cssStyle.innerHTML = `.item-style-ax8823{${text.value}}`;
+        document.getElementsByTagName('head')[0].appendChild(cssStyle);
+        let items = document.getElementsByClassName("item");
+        for (let i=0; i < items.length; i++) {
+            items[i].classList.add("item-style-ax8823")
+        }
+        init();
+    }
+
+    onContainerChange();
+    onItemChange();
+</script>
+</body>
+</html>
