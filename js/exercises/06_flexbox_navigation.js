@@ -17,9 +17,9 @@ let infos = [
         contentIsHTML: true,
     },
     {
-        title: "Text: Navigationsleisten in CSS",
-        markdown: `/js/exercises/markdown/${exerciseID}/info.md`,
-        contentIsMarkdown: true,
+        title: "Video: Flexbox Grundlagen",
+        content: `<iframe title="CSS: Flexbox Basics" src="https://zumvideo.de/videos/embed/b4fcd754-c3b8-43ab-8130-267b1cd11f0a" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>`,
+        contentIsHTML: true,
     },
 ]
 
