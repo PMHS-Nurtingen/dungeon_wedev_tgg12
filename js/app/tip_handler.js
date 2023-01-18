@@ -39,7 +39,7 @@ async function setTips(initTipMsg) {
         let aNode = getTipButtonElement(exerciseID, i, getTipPrice(tip.level), tip.title)
         let dialog = await getTipDialogElement(exerciseID, i, tip);
         dialogWrapperEl.appendChild(dialog);
-        if (isPurchased) {
+        if (isPurchased || tip.level == 0) {
             setTipPurchasedState(aNode, i);
         }
         exerciseTipListEl.appendChild(aNode.buttonEl);

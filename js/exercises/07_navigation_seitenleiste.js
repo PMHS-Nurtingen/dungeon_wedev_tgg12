@@ -16,15 +16,6 @@ let infos = [
         markdown: `/js/exercises/markdown/${exerciseID}/info.md`,
         contentIsMarkdown: true,
     },
-    {
-        title: "Test",
-        content: `<iframe title="TODO" src="/aufgaben/static/flexbox.html" sandbox="allow-same-origin allow-scripts allow-popups" width="1000", height="800"></iframe>`,
-        weblinks: [
-            "https://wiki.selfhtml.org/wiki/CSS/Tutorials/Hintergrund/Gestaltung_mit_CSS",
-            "https://wiki.selfhtml.org/wiki/CSS/Tutorials/Boxmodell"
-        ],
-        contentIsHTML: true,
-    },
 ]
 
 let tips = [
@@ -53,19 +44,7 @@ let validationFuncs = [
         return classHasCorrectStyleValue("container", "justify-content", "flex-end");
     },
     function () {
-        return classHasCorrectStyleValue("container", "align-items", "flex-start");
-    },
-    function () {
-        return classHasCorrectStyleValue("item", "width", "150px", 0);
-    },
-    function () {
-        return classCheckStyleSameValue("item", [
-            "margin-top",
-            "margin-bottom",
-        ], "2px", 0);
-    },
-    function () {
-        return classCheckStyleSameValue("container", cssPaddingNames, "10px", 0);
+        return classHasCorrectStyleValue("container", "align-items", "center");
     },
 ]
 

@@ -413,6 +413,11 @@ export const cssPaddingNames = [
     "padding-right",
 ];
 
+export const cssPaddingNamesLR = [
+    "padding-left",
+    "padding-right",
+];
+
 export function elCheckStyleSameValue(elName, styleNames, styleValue) {
     let el = document.getElementById(elName);
     for (let i = 0; i < styleNames.length; i++) {
@@ -732,6 +737,30 @@ export function listHasMinElements(elName, numElements) {
     return getFailResultObj(
         `Die Liste ${elName} hat nicht genug Elemente (mindestens: ${numElements}).`
     );
+}
+
+/* Horizontal Distance */
+export function checkHorizontalDistanceBetweenElements(elName1, elName2, targetDistance, decimals=0) {
+    const distance = getHorizontalDistanceBetweenElements(elName1, elName2).toFixed(decimals);
+    console.log(`Distanz Ist: ${distance} / Soll: ${targetDistance}`);
+    if (distance === targetDistance.toFixed(decimals)) {
+        return getSuccessResultObj();
+    }
+    return getFailResultObj(`Die horizontale Entfernung von ${elName1} und ${elName2} ist nicht korrekt.`)
+}
+
+export function getHorizontalDistanceBetweenElements(elName1, elName2) {
+    let el1 = document.getElementById(elName1);
+    if (!el1) {
+        return getFailResultObj(elDoesNotExistMsg(elName1));
+    }
+    let el2 = document.getElementById(elName2);
+    if (!el2) {
+        return getFailResultObj(elDoesNotExistMsg(elName2));
+    }
+    const bb1 = el1.getBoundingClientRect();
+    const bb2 = el2.getBoundingClientRect();
+    return bb2.left-bb1.right;
 }
 
 export function getVerticalDistanceBetweenElements(elName1, elName2) {

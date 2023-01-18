@@ -1,3 +1,4 @@
-1. TODO: Schritt 1: Flex-Container erstellen
-2. Schritt 2: flex-direction ausprobieren
-3. Schritt 3: 
+Die drei `<li>`-Elemente sollen *nebeneinander* verteilt werden.
+1. Definiere das umgebendenen Containerelement als Flexbox
+2. Platziere die Elemente `horizontal` in der Mitte.
+3. Platziere die Elemente `vertikal` ganz unten.

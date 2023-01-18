@@ -53,7 +53,7 @@ let validationFuncs = [
         return classHasCorrectStyleValue("container", "justify-content", "center");
     },
     function () {
-        return classHasCorrectStyleValue("container", "align-items", "center");
+        return classHasCorrectStyleValue("container", "align-items", "flex-end");
     }
 ]
 
