@@ -47,10 +47,10 @@ let validationFuncs = [
         return classHasCorrectStyleValue("container", "flex-direction", "column");
     },
     function () {
-        return classHasCorrectStyleValue("container", "justify-content", "flex-end");
+        return classHasCorrectStyleValue("container", "justify-content", "center");
     },
     function () {
-        return classHasCorrectStyleValue("container", "align-items", "center");
+        return classHasCorrectStyleValue("container", "align-items", "flex-end");
     },
 ]
 

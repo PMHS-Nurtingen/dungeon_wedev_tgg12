@@ -10,6 +10,7 @@ import {
     cssPaddingNames,
     elCheckStyleSameValue,
     elementsExist,
+    getFailResultObj,
     hasCorrectStyleValue,
     hasSelectorStyleValue,
     navListContainsElements,
@@ -73,9 +74,17 @@ let validationFuncs = [
     function () {
         return hasSelectorStyleValue(".menu > li", "display", "inline");
     },
-    function() { return navListContainsElements("hauptmenu", [new NavListItem("#", "Startseite"),
-        new NavListItem("#", "Dashboard"),
-        new NavListItem("#", "Meine Kurse")]); }
+    function() { 
+        let ulEls = document.getElementsByTagName("ul");
+        if (ulEls.length == 1) {
+            return navListContainsElements(ulEls[0], "ul-Element", [new NavListItem("#", "Startseite"),
+            new NavListItem("#", "Dashboard"),
+            new NavListItem("#", "Meine Kurse")]); 
+        }
+        return getFailResultObj("In dieser Aufgabe muss genau ein (1) ul-Element vorhanden sein")
+    }
+
+
 
 ]
 

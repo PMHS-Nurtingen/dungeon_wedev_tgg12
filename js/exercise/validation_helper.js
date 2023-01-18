@@ -124,8 +124,8 @@ export class NavListItem {
         this.innerText = innerText;
     }
 }
-export function navListContainsElements(listElId, navListItems) {
-    let el = document.getElementById(listElId);
+export function navListContainsElements(el, listElId, navListItems) {
+    // let el = document.getElementById(listElId);
     if (!el) {
         return getFailResultObj(elDoesNotExistMsg(listElId));
     }
@@ -134,14 +134,14 @@ export function navListContainsElements(listElId, navListItems) {
 
     if (children.length !== navListItems.length) {
         return getFailResultObj(
-            `List ${listElId} enthält ${children.length} Elemente. Gefordert sind ${navListItems.length}.`
+            `Liste ${listElId} enthält ${children.length} Elemente. Gefordert sind ${navListItems.length}.`
         );
     }
     for (let i = 0; i < navListItems.length; i++) {
         let target = navListItems[i];
         let child = children[i].children[0];
         console.log(child);
-        if (child.tagName !== "A") {
+        if (child == undefined || child.tagName !== "A") {
             return getFailResultObj(
                 `Das ${i}te ListItem der Liste ${listElId} enthält keinen Link.`
             );
