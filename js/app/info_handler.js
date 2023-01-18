@@ -7,6 +7,7 @@ var currentInfos = []
 var currentInfoNodes = []
 var converter = new showdown.Converter({
     openLinksInNewWindow: true,
+    parseImgDimensions: true,
 });
 
 async function setInfos(initInfosMsg) {

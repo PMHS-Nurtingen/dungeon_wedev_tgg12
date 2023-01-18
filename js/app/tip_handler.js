@@ -15,6 +15,7 @@ var currentTips = []
 var currentTipNodes = []
 var converter = new showdown.Converter({
     openLinksInNewWindow: true,
+    parseImgDimensions: true,
 });
 
 async function setTips(initTipMsg) {

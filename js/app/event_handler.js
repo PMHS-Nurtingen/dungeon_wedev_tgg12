@@ -10,6 +10,7 @@ import {
 import { updatePageVariables } from "./view.js";
 var converter = new showdown.Converter({
   openLinksInNewWindow: true,
+  parseImgDimensions: true,
 });
 
 async function exerciseMessageHandler(event) {
