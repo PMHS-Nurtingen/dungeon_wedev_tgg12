@@ -6,4 +6,6 @@
 3. Verteile anschließend die Navigationselemente noch in einer Zeile. 
 
 ## Tipps
-- Ein Flexbox Container reicht hier nicht aus.
+- Du brauchst eventuell mehr als eine Flexbox! Überlege dir, welche Container du zur Verfügung hast. 
+
+**Seitennotiz**: Solltest du in anderen Aufgaben einmal kein passendes Container-Element zur Verfügung haben, erstelle dir einfach einen (z.B. als div).

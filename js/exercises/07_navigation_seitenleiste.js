@@ -26,6 +26,12 @@ let tips = [
         contentIsMarkdown: true,
     },
     {
+        level: 1,
+        title: "Horizontal & vertikal verteilen",
+        markdown: `/js/exercises/markdown/${exerciseID}/tip_2.md`,
+        contentIsMarkdown: true,
+    },
+    {
         level: 3,
         title: "Lösung anzeigen",
         markdown: `/js/exercises/markdown/${exerciseID}/tip_solution.md`,

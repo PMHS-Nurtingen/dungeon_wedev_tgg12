@@ -4,16 +4,10 @@ Für die Lösung müssen folgende CSS Klasse Regeln zugewiesen werden.
 
 ## CSS Klasse: container
 ```css
-padding: 10px;
 display: flex;
 flex-direction: column;
 justify-content: flex-end;
-align-items: flex-start;
+align-items: center;
 ```
 
-## CSS Klasse: item
-```css
-width: 150px;
-margin-top: 2px;
-margin-bottom: 2px;
-```
+Sieh dir noch einmal an, wie sich die Werte für `justify-content` und `align-items` je nach Achsenausrichtung auswirken. Drehe dafür die Hauptachsen, indem du zwischen `flex-direction: column;` und `flex-direction: row;` wechselst.

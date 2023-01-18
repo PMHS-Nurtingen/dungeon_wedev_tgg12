@@ -5,5 +5,5 @@ Für die Lösung müssen der CSS Klasse `container` folgende Regeln zugewiesen w
 ```css
 display: flex;
 justify-content: center;
-align-items: center;
+align-items: flex-end;
 ```

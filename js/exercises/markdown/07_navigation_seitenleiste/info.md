@@ -1,12 +1,5 @@
 # 1. Flexbox Grundlagen
 
-## Container zum Flex-Container machen
-
-```css
-.container {
-    display: flex;
-}
-```
 ## Ausrichtung der Hauptachse ändern
 
 ```css
@@ -16,40 +9,8 @@
 }
 ```
 
-## Verteilung der flex-items entlang der HAUPTACHSE
-
-Mögliche Werte:
-- flex-start
-- flex-end
-- center
-- space-around
-- space-between
-
-```css
-.container {
-    ...
-    justify-content: flex-start;
-}
-```
-
-## Verteilung der flex-items entlang der KREUZACHSE
-
-Mögliche Werte:
-- flex-start
-- flex-end
-- center
-- stretch
-
-```css
-.container {
-    ...
-    align-items: flex-start;
-}
-```
-
-
-
-
+## Verteilung
+Achte bei der Verteilung auf die Veränderung der Achsen beim Ändern von `flex-direction`.
 
 ## Weiterführende Links
 

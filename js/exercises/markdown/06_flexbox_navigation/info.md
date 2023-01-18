@@ -7,7 +7,12 @@
     display: flex;
 }
 ```
-## Ausrichtung der Hauptachse ändern
+
+## Ausrichtung der Flexbox ändern
+
+Teste diese Werte für die Eigenschaft `flex-direction`:
+- row
+- column
 
 ```css
 .container {
@@ -16,7 +21,7 @@
 }
 ```
 
-## Verteilung der flex-items entlang der HAUPTACHSE
+## Werte für justify-content
 
 Mögliche Werte:
 - flex-start
@@ -32,7 +37,7 @@ Mögliche Werte:
 }
 ```
 
-## Verteilung der flex-items entlang der KREUZACHSE
+## Werte für align-items;
 
 Mögliche Werte:
 - flex-start

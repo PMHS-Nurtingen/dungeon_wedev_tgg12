@@ -12,18 +12,14 @@ let instructions = {
 
 let infos = [
     {
+        title: "Flexbox Livetest",
+        content: `<iframe title="TODO" src="/aufgaben/static/flexbox.html" sandbox="allow-same-origin allow-scripts allow-popups" width="1000", height="800"></iframe>`,
+        contentIsHTML: true,
+    },
+    {
         title: "Text: Navigationsleisten in CSS",
         markdown: `/js/exercises/markdown/${exerciseID}/info.md`,
         contentIsMarkdown: true,
-    },
-    {
-        title: "Test",
-        content: `<iframe title="TODO" src="/aufgaben/static/flexbox.html" sandbox="allow-same-origin allow-scripts allow-popups" width="1000", height="800"></iframe>`,
-        weblinks: [
-            "https://wiki.selfhtml.org/wiki/CSS/Tutorials/Hintergrund/Gestaltung_mit_CSS",
-            "https://wiki.selfhtml.org/wiki/CSS/Tutorials/Boxmodell"
-        ],
-        contentIsHTML: true,
     },
 ]
 
@@ -32,6 +28,12 @@ let tips = [
         level: 0,
         title: "Legende",
         markdown: `/js/exercises/markdown/${exerciseID}/tip_1.md`,
+        contentIsMarkdown: true,
+    },
+    {
+        level: 1,
+        title: "Horizontal & vertikal verteilen",
+        markdown: `/js/exercises/markdown/${exerciseID}/tip_2.md`,
         contentIsMarkdown: true,
     },
     {
