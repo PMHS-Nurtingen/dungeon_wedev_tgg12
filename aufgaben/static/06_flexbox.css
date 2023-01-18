@@ -1,6 +1,8 @@
 .container {
     height: 150px;
-    width: 600px;
+    min-width: 320px;
+    max-width: 600px;
+    width: calc(100% - 150px);
     border: solid black 2px;
     background-color: hsl(0, 0%, 90%);
     padding: 0;
@@ -17,7 +19,7 @@
     border: solid hsl(0, 0%, 0%, 25%) 2px;
 
     /* HACK to avoid space between items */
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 
 .wrapper {
