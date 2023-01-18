@@ -433,6 +433,7 @@ export function elCheckStyleSameValue(elName, styleNames, styleValue) {
     }
     return getSuccessResultObj();
 }
+
 export function classCheckStyleSameValue(className, names, value, round=null) {
     return classCheckStyleValues(
         className,
@@ -740,6 +741,16 @@ export function listHasMinElements(elName, numElements) {
 }
 
 /* Horizontal Distance */
+
+export function checkHorizontalDistanceBetweenElementsBetween(elName1, elName2, targetDistanceFrom, targetDistanceTo, decimals=0) {
+    const distance = getHorizontalDistanceBetweenElements(elName1, elName2).toFixed(decimals);
+    console.log(`Distanz Ist: ${distance} / Soll: ${targetDistanceFrom} - ${targetDistanceTo}`);
+    if (distance >= targetDistanceFrom.toFixed(decimals) && distance <= targetDistanceTo.toFixed(decimals)) {
+        return getSuccessResultObj();
+    }
+    return getFailResultObj(`Die horizontale Entfernung von ${elName1} und ${elName2} ist nicht korrekt.`)
+}
+
 export function checkHorizontalDistanceBetweenElements(elName1, elName2, targetDistance, decimals=0) {
     const distance = getHorizontalDistanceBetweenElements(elName1, elName2).toFixed(decimals);
     console.log(`Distanz Ist: ${distance} / Soll: ${targetDistance}`);

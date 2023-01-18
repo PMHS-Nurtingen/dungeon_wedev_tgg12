@@ -9,6 +9,7 @@ let exercises = [
     { id: "06_flexbox_navigation", name: "Navigation (Flexbox)", level: 1 },
     { id: "07_navigation_seitenleiste", name: "Navigation Seitenleiste", level: 2 },
     { id: "08_zusatz_flexbox_seitenleiste", name: "Zusatzaufgabe: Links, Mitte, Rechts", level: 3 },
+    { id: "09_seitenleiste_feedback_button", name: "Feedback Button positionieren", level: 3 },
 ];
 
 export { exercises };
