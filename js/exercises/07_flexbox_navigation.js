@@ -12,10 +12,10 @@ let instructions = {
 
 let infos = [
     {
-        title: "Flexbox Livetest",
-        content: `<iframe title="TODO" src="/aufgaben/static/flexbox.html" sandbox="allow-same-origin allow-scripts allow-popups" width="1000", height="800"></iframe>`,
-        contentIsHTML: true,
-    }
+        title: "Benötigte Eigenschaften",
+        markdown: `/js/exercises/markdown/${exerciseID}/info.md`,
+        contentIsMarkdown: true,
+    },
 ]
 
 let tips = [
