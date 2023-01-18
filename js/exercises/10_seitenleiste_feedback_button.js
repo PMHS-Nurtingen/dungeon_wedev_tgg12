@@ -11,7 +11,7 @@ import {
 } from '../exercise/validation_helper.js';
 import {Exercise} from '../exercise/exercise_base.js';
 
-let exerciseID = "09_seitenleiste_feedback_button";
+let exerciseID = "10_seitenleiste_feedback_button";
 
 
 let instructions = {

@@ -2,7 +2,7 @@ import {
     classHasCorrectStyleValue, classCheckStyleSameValue, cssPaddingNames} from '../exercise/validation_helper.js';
 import {Exercise} from '../exercise/exercise_base.js';
 
-let exerciseID = "07_navigation_seitenleiste";
+let exerciseID = "08_navigation_seitenleiste";
 
 
 let instructions = {

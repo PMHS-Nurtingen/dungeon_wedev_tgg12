@@ -8,7 +8,7 @@ import {
 } from '../exercise/validation_helper.js';
 import {Exercise} from '../exercise/exercise_base.js';
 
-let exerciseID = "08_zusatz_flexbox_seitenleiste";
+let exerciseID = "09_zusatz_flexbox_seitenleiste";
 
 
 let instructions = {

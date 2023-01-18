@@ -2,7 +2,7 @@ import {
     classHasCorrectStyleValue} from '../exercise/validation_helper.js';
 import {Exercise} from '../exercise/exercise_base.js';
 
-let exerciseID = "06_flexbox_navigation";
+let exerciseID = "07_flexbox_navigation";
 
 
 let instructions = {
@@ -15,12 +15,7 @@ let infos = [
         title: "Flexbox Livetest",
         content: `<iframe title="TODO" src="/aufgaben/static/flexbox.html" sandbox="allow-same-origin allow-scripts allow-popups" width="1000", height="800"></iframe>`,
         contentIsHTML: true,
-    },
-    {
-        title: "Video: Flexbox Grundlagen",
-        content: `<iframe title="CSS: Flexbox Basics" src="https://zumvideo.de/videos/embed/b4fcd754-c3b8-43ab-8130-267b1cd11f0a" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>`,
-        contentIsHTML: true,
-    },
+    }
 ]
 
 let tips = [
