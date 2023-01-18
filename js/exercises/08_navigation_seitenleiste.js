@@ -12,7 +12,7 @@ let instructions = {
 
 let infos = [
     {
-        title: "Text: Navigationsleisten in CSS",
+        title: "Ausrichtung ändern",
         markdown: `/js/exercises/markdown/${exerciseID}/info.md`,
         contentIsMarkdown: true,
     },
