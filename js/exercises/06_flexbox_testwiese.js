@@ -21,6 +21,7 @@ let infos = [
         content: `<iframe title="CSS: Flexbox Basics" src="https://zumvideo.de/videos/embed/b4fcd754-c3b8-43ab-8130-267b1cd11f0a" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>`,
         contentIsHTML: true,
     },
+
 ]
 
 let tips = [
@@ -43,11 +44,15 @@ function getContainerEl() {
 function setContainerPropertiesValueTried() {
     let containerEl = getContainerEl();
     if (containerEl == null) {
+        console.log("no container found")
         return
     }
     let computedStyle = window.getComputedStyle(containerEl, null);
     localStorage.setItem("display" + computedStyle.display, true);
     localStorage.setItem("flex-direction" + computedStyle.flexDirection, true);
+    localStorage.setItem("justify-content" + computedStyle.justifyContent, true);
+    localStorage.setItem("align-items" + computedStyle.justifyContent, true);
+    console.log("saved testwiese data in localStorage")
 }
 
 function checkContainerPropertyValueTried(propertyName, value) {
@@ -56,6 +61,8 @@ function checkContainerPropertyValueTried(propertyName, value) {
         return getFailResultObj("In dieser Aufgabe ist nur ein Element mit der Klasse `container` erlaubt.")
     }
     let tried = localStorage.getItem(propertyName + value);
+    console.log(`Tested: ` + propertyName + value);
+    console.log("Value from local Storage");
     console.log(tried)
     if (tried) {
         return getSuccessResultObj();
@@ -69,6 +76,7 @@ let validationFuncs = [
         return classHasCorrectStyleValue("container", "display", "flex");
     },
     function () {
+        console.log("aaa")
         setContainerPropertiesValueTried();
         return checkContainerPropertyValueTried("flex-direction", "row");
     },
